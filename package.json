@@ -7,6 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.3",
+    "@types/heic-convert": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^23.0.0",
@@ -18,7 +19,6 @@
     "typescript": "*"
   },
   "dependencies": {
-    "@types/heic-convert": "^1.2.0",
     "heic-convert": "^1.2.4",
     "jimp": "^0.16.2"
   },
