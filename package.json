@@ -23,8 +23,8 @@
     "jimp": "^0.16.2"
   },
   "scripts": {
-    "prod:js": "node ./dist/app.js",
-    "prod:ts": "ts-node ./src/app.ts",
+    "run:js": "node ./dist/app.js",
+    "run:ts": "ts-node ./src/app.ts",
     "build": "tsc",
     "dev": "nodemon",
     "eslint": "./node_modules/.bin/eslint .",

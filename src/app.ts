@@ -2,13 +2,14 @@ import jimp from 'jimp'
 import fs = require('fs')
 import path = require('path')
 import heic from 'heic-convert'
+import process from 'process'
 
-const targetWidth = 1200
-const targetHeight = 1200
+const targetWidth = Number(process.env.TARGET_WIDTH ?? 1200)
+const targetHeight = Number(process.env.TARGET_HEIGHT ?? 1200)
 
-const imagesDirInput = path.join(__dirname, '../images')
-const imagesDirOutput = path.join(__dirname, '../output')
-const targetQuality = 80
+const imagesDirInput = process.env.DIR_INPUT ?? path.join(__dirname, '../images')
+const imagesDirOutput = process.env.DIR_OUTPUT ?? path.join(__dirname, '../output')
+const targetQuality = Number(process.env.QUALITY ?? 80)
 
 const allowedMediaExt = ['.jpg', '.jpeg', '.heic', '.png', '.tiff']
 
